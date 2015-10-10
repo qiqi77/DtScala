@@ -22,7 +22,7 @@ object For_Function_Advanced {
 
     def combine(context: String, left: String = "[", right: String="]") = left + context + right  //为参数指定了值
     println("The result from a combine is : " + combine("I love Spark"))
-    println("The result from a combine is : " + combine("I love Spark", "<<")) //传入的新参数只 会覆盖掉 默认值
+    println("The result from a combine is : " + combine("I love Spark", "<<")) //传入的新参数值 会覆盖掉 默认值
 
     def connected(args: Int*) = {   //可变参数：参数可以有很多个
       var result = 0
